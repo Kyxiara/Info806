@@ -19,6 +19,7 @@ public class ReaderCSV {
         return listPerson;
     }
 
+    //Takes a csv with a birthday list, and returns a list of Person
     public void csvToListPerson(){
         String csvFile = "CSV_Birthday.csv";
         BufferedReader br = null;
@@ -40,9 +41,6 @@ public class ReaderCSV {
 
                 Person person = new Person(birthday[0], birthday[1], birthday[2], dateBirthday);
                 listPerson.add(person);
-                //System.out.println( birthday[0] + " " + birthday[1] + " (" + birthday[2] + ") a son anniv le " + dateFormat.format(dateBirthday));
-                //System.out.println(dateFormat.format(today).equals(dateFormat.format(dateBirthday)));
-
             }
 
         } catch (IOException e) {

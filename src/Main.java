@@ -23,7 +23,7 @@ public class Main {
     }
 
     public static void main(String[] args) throws Exception {
-        pw = args[0];
+        pw = args[0]; //password of my E-mail adress
         ReaderCSV reader = new ReaderCSV();
         reader.csvToListPerson();
         listPerson = reader.getListPerson();

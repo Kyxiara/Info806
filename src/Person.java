@@ -52,6 +52,7 @@ public class Person {
         return firstName + " " + lastName + " (" + email + ") a son anniversaire le " + birthday;
     }
 
+    //Test if his birthday is today
     public boolean birthdayToday(){
         DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
         Date today = new Date();
